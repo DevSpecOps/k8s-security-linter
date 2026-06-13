@@ -24,4 +24,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/DevSpecOps/k8s-security-linter:latest, ghcr.io/DevSpecOps/k8s-security-linter:${{ github.ref_name }}
+          tags: |
+            ghcr.io/devspecops/k8s-security-linter:latest
+            ghcr.io/devspecops/k8s-security-linter:${{ github.ref_name }}
