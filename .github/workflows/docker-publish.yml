@@ -6,7 +6,6 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   push_to_registry:
@@ -32,5 +31,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ env.REGISTRY }}/${{ github.repository_owner | lower }}/k8s-security-linter:latest
-            ${{ env.REGISTRY }}/${{ github.repository_owner | lower }}/k8s-security-linter:${{ github.ref_name }}
+            ${{ env.REGISTRY }}/devspecops/k8s-security-linter:latest
+            ${{ env.REGISTRY }}/devspecops/k8s-security-linter:${{ github.ref_name }}
