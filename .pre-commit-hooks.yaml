@@ -1,0 +1,8 @@
+- id: k8s-security-linter
+  name: K8s Security Linter
+  description: Check Kubernetes YAML files for security violations
+  entry: k8s-security-linter --path
+  language: system
+  types: [file]
+  files: \.(yaml|yml)$
+  pass_filenames: false

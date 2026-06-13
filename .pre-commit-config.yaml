@@ -1,0 +1,4 @@
+- repo: https://github.com/DevSpecOps/k8s-security-linter
+  rev: v0.1.0
+  hooks:
+    - id: k8s-security-linter

@@ -1,0 +1,22 @@
+name: 'K8s Security Linter'
+description: 'Lint Kubernetes YAML files for security issues'
+inputs:
+  path:
+    description: 'Path to YAML files or directory'
+    required: true
+    default: '.'
+  json:
+    description: 'Output JSON format'
+    required: false
+    default: 'false'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - '--path'
+    - ${{ inputs.path }}
+    - '--json'
+    - ${{ inputs.json }}
+branding:
+  icon: 'shield'
+  color: 'blue'
