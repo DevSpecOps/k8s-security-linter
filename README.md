@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/DevSpecOps/k8s-security-linter/actions/workflows/ci.yaml/badge.svg)](https://github.com/DevSpecOps/k8s-security-linter/actions/workflows/ci.yaml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/DevSpecOps/k8s-security-linter)](https://goreportcard.com/report/github.com/DevSpecOps/k8s-security-linter)
+[![GitHub release](https://img.shields.io/github/v/release/DevSpecOps/k8s-security-linter)](https://github.com/DevSpecOps/k8s-security-linter/releases)
 [![License](https://img.shields.io/github/license/DevSpecOps/k8s-security-linter)](LICENSE)
 [![Docker](https://img.shields.io/badge/docker-ghcr.io-blue)](https://github.com/DevSpecOps/k8s-security-linter/pkgs/container/k8s-security-linter)
 
