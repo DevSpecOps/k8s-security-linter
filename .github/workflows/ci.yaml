@@ -15,8 +15,9 @@ jobs:
           go-version: '1.25'
       - name: Test
         run: go test ./pkg/... -v
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: golangci/golangci-lint-action@v4
+#  temporary disabled linter due to the versions incompatibility - will put back when the version will be released
+#  lint:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v4
+#      - uses: golangci/golangci-lint-action@v4
